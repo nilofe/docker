@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/test@v2
+    - uses: actions/docker@v2
     - name: Build the Docker image
       run: docker build . nilofe/go-server:v5:$(date +%s)
